@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                                        "nav main aside"
+                                        "footer footer footer";
+    background-color: lightyellow;
+    grid-template-rows: 140px auto 72px;
+    grid-template-columns: auto 600px 500px;
+    width: 75vw;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkred;
+    grid-area: header;
+}
+
+header > h1 {
+    color: lightyellow;
+    font-size: 36px;
+    line-height: 140px;
+    position: relative;
+    float: left;
+    left: 60px;
+}
+
+#brasao {
+    float: left;
+    margin-top: 22px;
+    margin-left: 10px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+ul > li {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+li > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightyellow;
+    background-color: darkgreen;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: darkslategrey;
+}
+
+main {
+    grid-area: main;
+}
+
+main > p {
+    margin-top: 20px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside > h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside > h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside > figure > img {
+    padding: 2px;
+    border: 2px solid black;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkred;
+}
+
+#divInterna {
+    position: relative;
+    width: 650px;
+    margin: 0 auto;
+}
+
+#divInterna > p {
+    display: inline;
+    color: lightyellow;
+    line-height: 72px;
+    padding-left: 30px;
+    text-align: right;
+}
+
+#divInterna > img {
+    float: left;
+    margin-top: 4px;
+}
